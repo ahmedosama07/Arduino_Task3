@@ -82,9 +82,9 @@ void loop() {
 
 
   // calculating angles in degrees
-  angle_Encoder1 = counter_Encoder1 * ratio;
-  angle_Encoder2 = counter_Encoder2 * ratio;
-  angle_Encoder3 = counter_Encoder3 * ratio;
+  angle_Encoder1 = (counter_Encoder1 * ratio) / 4;
+  angle_Encoder2 = (counter_Encoder2 * ratio) / 4;
+  angle_Encoder3 = (counter_Encoder3 * ratio) / 4;
 
   // calculate positive angle if it is reached through negative direction
   if(angle_Encoder1 < 0)

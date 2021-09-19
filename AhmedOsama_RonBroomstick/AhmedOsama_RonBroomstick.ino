@@ -31,6 +31,7 @@ void setup() {
   setIMU_Register(0x6B, 0x00);
 
   // Gyroscope Configuration
+  // FSR = 500
   setIMU_Register(0x1B,0x08);
 
   //Calibration
@@ -63,6 +64,8 @@ void loop() {
     delay(10);
     digitalWrite(REDLED, LOW);
   }
+
+  delay(10);
 }
 
 // Interfacing IMU
